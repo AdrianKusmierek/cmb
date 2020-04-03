@@ -1,4 +1,5 @@
 const { Client, RichEmbed, Collection } = require("discord.js");
+const { config } = require("dotenv");
 const { ffmpeg } = require("ffmpeg-static");
 const { opusscript } = require("opusscript");
 const { fs } = require("fs");
@@ -51,4 +52,4 @@ if (command)
 
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
